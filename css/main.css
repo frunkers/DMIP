@@ -2,6 +2,36 @@
 @import 'reset.css';
 @import 'fonts.css';
 
+.section {
+	margin: calc(var(--offsetStep) * 2) 0 0 0;
+}
+
+.sub__title {
+	font-size: 20px;
+	color: var(--colorText);
+}
+
+.btn {
+	padding: 14px 52px;
+	background: var(--colorHover);
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 1.4px;
+	border-radius: 100px;
+	transition: var(--transition);
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--colorSubTitle);
+}
+
+.btn:active {
+	background: var(--colorHover);
+	transition: 0s;
+}
+
 /********** header **********/
 .header {
 	margin: 0 65px;
@@ -72,26 +102,15 @@
 }
 
 /********** section offer **********/
-.offer {
-	margin: calc(var(--offsetStep) * 2) 0 0 0;
-}
-
-.offer__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .offer__date {
-	width: 100%;
-	margin: 0 0 2px 0;
+	display: block;
+	margin: 0 auto 2px auto;
 	font-size: 32px;
 	text-align: center;
 	color: var(--colorHover);
 }
 
 .offer__title {
-	width: 100%;
 	font-size: 70px;
 	text-align: center;
 	color: var(--colorText);
@@ -99,7 +118,6 @@
 }
 
 .offer__sub-title {
-	width: 100%;
 	margin: 2px 0 0 0;
 	font-size: 40px;
 	color: var(--colorSubTitle);
@@ -109,7 +127,7 @@
 
 .offer__text {
 	max-width: 450px;
-	margin: 60px 0 0 0;
+	margin: 60px auto 0 auto;
 	font-size: 20px;
 	color: var(--colorText);
 	text-align: center;
@@ -125,22 +143,6 @@
 
 .offer__btn {
 	margin: 28px 0 0 0;
-	padding: 14px 52px;
-	background: var(--colorHover);
-	font-size: 18px;
-	color: #fff;
-	letter-spacing: 1.4px;
-	border-radius: 100px;
-	transition: var(--transition);
-}
-
-.offer__btn:hover {
-	background: var(--colorSubTitle);
-}
-
-.offer__btn:active {
-	background: var(--colorHover);
-	transition: 0s;
 }
 
 /********** footer **********/
@@ -162,7 +164,7 @@
 }
 
 .footer__item {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 14px;
 	transition: var(--transition);
 }
 
@@ -199,4 +201,156 @@
 	margin: 20px 0 0 0;
 	text-align: end;
 	color: #676767;
+}
+
+/********** section contacts **********/
+.contacts {
+	margin: 20px 0 0 0;
+}
+
+.contacts__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.contacts__block {
+	width: 100%;
+}
+
+.contacts__list {
+	margin: 30px 0 0 0;
+	padding: 0 0 0 175px;
+}
+
+.contacts__item {
+	margin: 20px 0 0 0;
+}
+
+.contacts__item:nth-child(1) {
+	margin: 0;
+}
+
+.contacts__name {
+	font-size: 20px;
+	color: #111;
+}
+
+.contacts__result {
+	margin: 10px 0 0 0;
+	font-size: 20px;
+	color: var(--colorText);
+}
+
+.contacts__form {
+	margin: 20px;
+}
+
+.form__data {
+	margin: 40px 0 0 0;
+}
+
+.form__input {
+	width: 400px;
+	margin: 20px 0 0 0;
+	display: block;
+	border: 1px solid #c0c0c0;
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: #111;
+}
+
+.form__input:nth-child(1) {
+	margin: 0;
+}
+
+.form__input::placeholder {
+	font-size: 16px;
+	color: #c0c0c0;
+}
+
+.title {
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+	color: var(--colorText);
+	letter-spacing: var(--letterSpacing);
+}
+
+.form__agreement {
+	margin: 30px 0 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.agreement__input {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #c0c0c0;
+}
+
+.agreement__text {
+	margin: 0 0 0 10px;
+	color: var(--colorText);
+}
+
+.agreement__link {
+	color: #000;
+	text-decoration: underline;
+}
+
+.form__btn {
+	display: block;
+	margin: 28px auto 0 auto;
+}
+
+/********** section about **********/
+.about__title {
+	margin: 0 0 20px 0;
+}
+
+.about__sub-title {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.about__btn {
+	display: block;
+	margin: 28px auto 0 auto;
+}
+
+.about__map {
+	display: block;
+	margin: 25px auto 0 auto;
+	border: none;
+	border-radius: 5px;
+}
+
+/********** section help **********/
+.help {
+	padding: 0 0 0 120px;
+}
+
+.help__list {
+	margin: 30px 0 0 0;
+}
+
+.help__item {
+	margin: 30px 0 0 0;
+}
+
+.help__item:nth-child(1) {
+	margin: 0;
+}
+
+.help__question {
+	text-decoration: underline;
+	font-size: 24px;
+	color: var(--colorText);
+}
+
+.help__answer {
+	margin: 10px 0 0 0;
+	font-size: 18px;
+	color: var(--colorText);
 }
