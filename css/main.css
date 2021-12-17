@@ -354,3 +354,24 @@
 	font-size: 18px;
 	color: var(--colorText);
 }
+
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: var(--colorText);
+	border-radius: 5px;
+}
+
+.popup>span {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
