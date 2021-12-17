@@ -1,0 +1,7 @@
+:root {
+	--fontFamilyOpenSans: 'Open Sans', sans-serif;
+	--fontFamilyRaleway: 'Raleway', sans-serif;
+	--fontWeightRegular: 400;
+	--outerСontainer: px;
+	--transition: 0.3s;
+}

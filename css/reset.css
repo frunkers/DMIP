@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+*:focus-visible {
+	outline: 3px solid var(--colorHover);
+	outline-offset: 5px;
+}
+
+html,
+body {
+	max-width: var(--maxWidthSite);
+	height: 825px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #000;
+	line-height: 1;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.wrapper {
+	min-height: 825px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: var(--maxWidthContainer);
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
