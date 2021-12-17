@@ -1,7 +1,7 @@
 @font-face {
-	font-weight: 500;
-	font-family: '';
+	font-weight: 400;
+	font-family: 'Myriad Pro';
 	font-style: normal;
 	font-display: swap;
-	src: url('../fonts/.woff') format('woff');
+	src: url('../fonts/myriad-pro-regular.otf') format('truetype');
 }

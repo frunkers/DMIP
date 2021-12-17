@@ -1,7 +1,14 @@
 :root {
-	--fontFamilyOpenSans: 'Open Sans', sans-serif;
-	--fontFamilyRaleway: 'Raleway', sans-serif;
+	--fontFamily: 'Myriad Pro', sans-serif;
 	--fontWeightRegular: 400;
-	--outerСontainer: px;
+	--siteСontainer: 1600px;
+	--rootСontainer: 810px;
+	--offsetStep: 40px;
+	--colorText: #2f3536;
+	--colorSubTitle: #9bad76;
+	--colorMenu: #313436;
+	--colorIcon: #777a7d;
+	--colorHover: #537F65;
+	--letterSpacing: 1.1px;
 	--transition: 0.3s;
 }
